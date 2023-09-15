@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yakshi's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-color: rgb(5, 5, 49);
+        color: white;
+        font-family: 'Poppins', sans-serif;
+    }
+    nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        background-color: rgb(29, 29, 109);
+    }
+    nav ul{
+        display: flex;
+        justify-content: center;
+    }
+    nav ul li{
+        list-style: none;
+        margin: 0px 23px;
+    }
+    nav ul a{
+       text-decoration: none;
+       color: white;
+    }
+    nav ul a:hover{
+       color: rgb(175, 175, 236);
+       font-size: 1.04rem;
+    }
+    .left{
+        font-size: 1.5rem;
+    }
+    .firstsection{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 130px 0px;
+    }
+    .firstsection > div{
+        width: 30%;
+    }
+    .leftsection{
+        font-size: 2rem;
+    }
+    .rightsection img{
+        width: 80%;
+    }
+    .purple{
+        color: rgb(124, 49, 194);
+    }
+    #element{
+        font-size: 3rem;
+        color: rgb(124, 49, 194);
+    }
+    .secondsection{
+        max-width: 80vw;
+        margin: auto;
+    }
+    main hr{
+        border: 0;
+        background:  rgb(124, 49, 194);
+        height: 2px;
+        margin: 4px 84px;
+    }
+    .secondsection h1{
+        font-size: 2.5rem;
+    }
+    .text-gray{
+        color: gray;
+    }
+    .secondsection p{
+        color: gray;
+    }
+    @media(max-width:998px){
+        html{
+            font-size: 75%;
+        }
+    }
+    @media(max-width:760px){
+        html{
+            font-size: 65%;
+        }
+    }
+</style>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Yakshi's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                   
+                    <li><a href="project.html">Projects</a></li>
+                   <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">Hi,my name is <span class="purple">Yakshi</span>
+                <div>I am a passionate</div>
+                <span id="element"></span>
+
+            </div>
+            <div class="rightsection">
+                <img src="PngItem_5311716.png" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="secondsection">
+            <span class="text-gray">What I have worked so far</span>
+            <h1>Work Experience</h1>
+            <p>Currently Third Year Computer Engineering student at K.C.college of Engineering and management studies</p>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['web developer'],
+          typeSpeed: 50,
+        });
+      </script>
+</body>
+
+</html>
